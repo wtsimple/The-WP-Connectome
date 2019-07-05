@@ -1,0 +1,14 @@
+# Plugins
+fakerpress
+
+# Node modules for vue
+vue-connectome/node_modules/*
+vue-connectome/.DS_Store
+vue-connectome/dist/
+vue-connectome/npm-debug.log
+vue-connectome/yarn-error.log
+
+
+# Other files
+connectome.zip
+index.php
