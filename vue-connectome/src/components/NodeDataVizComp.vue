@@ -2,21 +2,26 @@
   <g :id="headID" :class="[headID, isActive ? '': 'inactive-viz' ]" :transform="transform">
     <g class="node-data-container">
       <foreignObject width="300px" height="100%">
-        <div class="node-data" xmlns="http://www.w3.org/1999/xhtml">
+        <div class="node-data" :style="{background: color }" xmlns="http://www.w3.org/1999/xhtml">
           <h3>
             <span>{{lastClickedNode.id.replace(this.delimiter, " ")}}:</span>
             <a :href="lastClickedNode.url" target="_blank">{{titleText}}</a>
           </h3>
-          <div class="node-data-block">
+          <div class="node-data-block" :style="{background: color }">
             <div class="node-image-container" v-if="lastClickedNode.image">
-              <img :src="lastClickedNode.image" alt>
+              <img :src="lastClickedNode.image" alt />
             </div>
             <div>
               <span>In the site connects with:</span>
               <strong>{{lastClickedNode.degree}}</strong>
             </div>
             <div v-if="lastClickedNode.excerpt" v-html="lastClickedNode.excerpt"></div>
-            <button v-if="lastClickedNode.url" target="_blank" @click.prevent="open_link">See</button>
+            <button
+              v-if="lastClickedNode.url"
+              target="_blank"
+              @click.prevent="open_link"
+              :style="{background: color }"
+            >See</button>
           </div>
         </div>
       </foreignObject>
@@ -39,7 +44,8 @@ export default {
       isActive: false,
       lastClickedID: "",
       lastClickedNode: { id: "0" },
-      status: "unselected" //{ unselected, selectedNoViz, selectedWithViz }
+      status: "unselected", //{ unselected, selectedNoViz, selectedWithViz }
+      color: ""
     };
   },
 
@@ -55,7 +61,7 @@ export default {
         ")";
       return translate;
     },
-    ...mapState(["graph", "delimiter"])
+    ...mapState(["graph", "delimiter", "typesData"])
   },
 
   mounted() {
@@ -116,6 +122,7 @@ export default {
       this.lastClickedNode = this.graph.get_node_by_id(d3node.id);
       this.titleText = this.lastClickedNode.label;
       this.lastClickedID = d3node.id;
+      this.color = this.typesData[this.lastClickedNode.type].color + "C5";
     },
 
     get_clicked_d3_node(event) {
@@ -158,7 +165,9 @@ export default {
   height: 100%;
   border-top: 1px solid black;
   background-color: rgba(78, 170, 179, 0.8);
-  padding-left: 5px;
+  padding: 5px;
+  /* opacity: 0.6; */
+  color: white;
 }
 .node-data-block img {
   width: 50%;
@@ -168,5 +177,9 @@ export default {
   background-color: rgba(11, 108, 117, 0.8);
   margin-bottom: 5px;
   padding: 10px 15px;
+  opacity: 0.8;
+  color: black;
+  margin-top: 5px;
+  border-radius: 5px;
 }
 </style>

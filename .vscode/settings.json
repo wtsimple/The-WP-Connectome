@@ -1,0 +1,31 @@
+{
+  "files.exclude": {
+    "fakerpress": "explorerExcludedFiles",
+    "vue-connectome/node_modules/*": "explorerExcludedFiles",
+    "vue-connectome/.DS_Store": "explorerExcludedFiles",
+    "vue-connectome/dist/": "explorerExcludedFiles",
+    "vue-connectome/npm-debug.log": "explorerExcludedFiles",
+    "vue-connectome/yarn-error.log": "explorerExcludedFiles",
+    "connectome.zip": "explorerExcludedFiles",
+    "index.php": "explorerExcludedFiles",
+    "*/package-lock.json": "explorerExcludedFiles",
+    "*/package.json": "explorerExcludedFiles",
+    "*/webpack.config.js": "explorerExcludedFiles",
+    "*/wp-activate.php": "explorerExcludedFiles",
+    "*/wp-blog-header.php": "explorerExcludedFiles",
+    "*/wp-comments-post.php": "explorerExcludedFiles",
+    "*/wp-cron.php": "explorerExcludedFiles",
+    "*/wp-links-opml.php": "explorerExcludedFiles",
+    "*/wp-load.php": "explorerExcludedFiles",
+    "*/wp-login.php": "explorerExcludedFiles",
+    "*/wp-mail.php": "explorerExcludedFiles",
+    "*/wp-settings.php": "explorerExcludedFiles",
+    "*/wp-signup.php": "explorerExcludedFiles",
+    "*/wp-trackback.php": "explorerExcludedFiles",
+    "*/xmlrpc.php": "explorerExcludedFiles",
+    "*/.babelrc": "explorerExcludedFiles",
+    "*/.editorconfig": "explorerExcludedFiles",
+    "*/.eslintrc.json": "explorerExcludedFiles",
+    "*/.vscode": "explorerExcludedFiles"
+  }
+}

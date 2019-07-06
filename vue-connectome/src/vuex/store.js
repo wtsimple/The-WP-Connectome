@@ -11,6 +11,7 @@ export default new Vuex.Store({
 		graph: new Graph(vueData.graph) /* the vueData comes from wp_localize */,
 		topHeadID: "connectome-viz", //The ID slug for the root element of the app
 		delimiter: "_connectome_",
+		// eslint-disable-next-line no-undef
 		typesData: vueData.typesData
 	},
 

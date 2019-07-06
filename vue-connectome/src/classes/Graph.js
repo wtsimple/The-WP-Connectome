@@ -11,8 +11,6 @@
  */
 export default class Graph {
 	constructor(graphArray) {
-		// console.log("Graph Array ", graphArray.links);
-
 		this.nodes = graphArray.nodes;
 		this.links = graphArray.links;
 		this.lastSelectedNodeID = "";
@@ -36,7 +34,6 @@ export default class Graph {
 		let links = this.links.filter(function(link) {
 			return link.source.id === nodeID || link.target.id === nodeID;
 		});
-		// console.log("Links ", links, nodeID);
 		return links;
 	}
 
