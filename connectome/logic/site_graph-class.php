@@ -17,7 +17,7 @@ class SiteGraph
      *
      * @var GraphData
      */
-    private $graphData;
+    public $graphData;
     /**
      * The graph as it's sent to the front end
      * @var array
@@ -36,7 +36,7 @@ class SiteGraph
      */
     public static function get_graph()
     {
-        $optionName = OptionStorage::get_option('OPTIONS_NAME') . '-graph';
+        $optionName = OptionStorage::get_option('OPTIONS_GRAPH_NAME');
         $graphRaw = get_option($optionName, '');
         $graphData = json_decode($graphRaw);
 
@@ -58,6 +58,7 @@ class SiteGraph
         $this->prepare_all_elements();
         $this->build_graph();
         $this->prune_graph();
+        $this->save_graph();
     }
 
     /**
@@ -81,7 +82,6 @@ class SiteGraph
         $this->build_plain_graph_data();
 
         $this->build_degree_centrality($keepOldCentrality);
-        $this->save_graph();
     }
 
     /**

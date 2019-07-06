@@ -59,11 +59,15 @@ class GraphData
      *
      * @param array $type the type of element requested
      * @param array|string $idList
+     * @param bool $getAll decides whether to return all elements, if true the $idList is ignored
      * @return array list of elements matching the IDs
      */
-    public function get_elements_by_id($type = '', $idList = null)
+    public function get_elements_by_id($type = '', $idList = null, $getAll = false)
     {
         $returnWholeElement = true;
+        if ($getAll) {
+            return $this->execute_by_type($type, 'get_objects', [$returnWholeElement]);
+        }
         return $this->execute_by_type($type, 'get_objects_by_id', [$idList, $returnWholeElement]);
     }
 

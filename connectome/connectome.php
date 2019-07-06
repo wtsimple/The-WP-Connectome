@@ -76,5 +76,9 @@ add_action('plugin_action_links_' . plugin_basename(__FILE__), 'Connectome\add_a
 function run_activation()
 {
     save_post_types();
+    // Activate all elements
+    // $siteGraph = new SiteGraph();
+    // $siteGraph->prepare_all_elements();
+    // $siteGraph->build_graph();
 }
 register_activation_hook(__FILE__, 'Connectome\run_activation');

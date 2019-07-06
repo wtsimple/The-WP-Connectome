@@ -43,7 +43,6 @@ class VueData
             'graph' => $this->graph_data(),
             'typesData' => $this->types_data(),
         ];
-        // $data = array_merge($data, cpts_the_current_user_can_edit());
         return $data;
     }
 

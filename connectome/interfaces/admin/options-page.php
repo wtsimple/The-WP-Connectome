@@ -12,6 +12,33 @@ class OptionPage
     * @var SettingsOptionHandler
     */
     private $optionHandler;
+    /**
+     * Object to handle the graph data
+     * @var SiteGraph
+     */
+    private $siteGraph;
+    /**
+     * Tells whether the elements in the siteGraph have being prepared
+     * @var boolean
+     */
+    private $areElementsPrepared = false;
+
+    /**
+     * Tells whether the option array has been cached
+     * @var boolean
+     */
+    private $areOptionsSet = false;
+
+    /**
+     * Caches the options
+     * @var array
+     */
+    private $options = [];
+    /**
+     * Tells whether the options have been saved before
+     * @var boolean
+     */
+    private $haveOptionsBeenSaved = true;
 
     public function __construct()
     {
@@ -19,6 +46,26 @@ class OptionPage
         $this->page = OptionStorage::get_option('OPTIONS_NAME');
         $this->postTypes = $this->get_post_types();
         $this->optionHandler = new SettingsOptionHandler();
+        $this->siteGraph = new SiteGraph();
+        $max = get_options_max($this->optionGroup);
+        if (empty($max)) {
+            $this->haveOptionsBeenSaved = false;
+        } else {
+            $this->haveOptionsBeenSaved = true;
+        }
+    }
+
+    /**
+     * Gets the graph elements ready to be used in the option page
+     * @return void
+     */
+    public function prepare_elements()
+    {
+        if (!$this->areElementsPrepared) {
+            $this->siteGraph->prepare_all_elements();
+            $this->siteGraph->build_graph();
+        }
+        $this->areElementsPrepared = true;
     }
 
     /**
@@ -50,6 +97,8 @@ class OptionPage
     */
     public function register_fields()
     {
+        $this->prepare_elements();
+
         register_setting($this->optionGroup, $this->optionGroup);
         $section = 'main_section';
         add_settings_section($section, 'Graph Settings', [$this, 'main_section'], $this->page);
@@ -84,7 +133,7 @@ class OptionPage
                 [$this, 'element_type_field'],
                 $this->page,
                 $section,
-                ['type' => $type, 'index' => $index + 2, 'post_type' => true]
+                ['type' => $type, 'index' => $index + 2, 'post_types' => true]
             );
         }
     }
@@ -103,11 +152,14 @@ class OptionPage
         $colorPalette = OptionStorage::get_option('COLOR_PALETTE');
         $index = $args['index'];
         $type = $args['type'];
-        $subType = isset($args['post_types']) ? 'postTypes' : '';
-        $amountField = $this->optionHandler->generate_name(['types', $type['name'], $subType, 'max']);
-        $amount = $this->get_field($amountField, -1);
-        $colorField = $this->optionHandler->generate_name(['types', $type['name'], $subType, 'color']);
-        $color = $this->get_field($colorField, $colorPalette[$index]); ?>
+        $supraType = isset($args['post_types']) ? 'postTypes' : '';
+        $amountField = $this->optionHandler->generate_name(['types', $supraType, $type['name'], 'max']);
+        $amount = $this->get_field($amountField, 10);
+        $colorField = $this->optionHandler->generate_name(['types', $supraType, $type['name'], 'color']);
+        $color = $this->get_field($colorField, $colorPalette[$index]);
+
+        $getAll = true;
+        $elements = $this->siteGraph->graphData->get_elements_by_id($type['name'], null, $getAll); ?>
 <span> Color: </span>
 <input disabled id='<?php echo $colorField ?>'
     name='<?php echo  $this->optionGroup . '[' . $colorField . ']'?>'
@@ -117,6 +169,28 @@ class OptionPage
     name='<?php echo $this->optionGroup . '[' . $amountField . ']'?>'
     type='number' min='-1' value='<?php  echo $amount ?>' />
 <span style='margin-left:10px;'>Total: <span class='elements-amount'><?php echo $type['amount'] ?></span></span>
+<div class="individual-element-selection">
+    <div class="individual-element-selectors" style="display:none;">
+        <?php foreach ($elements as $element):
+        $checkName = $this->optionHandler->generate_name(['types', $supraType, $type['name'], 'elements', $element['id'], 'isActive']);
+        if ($this->get_field($checkName, true) === 'on' or !$this->haveOptionsBeenSaved) {
+            $checked = ' checked="checked" ';
+        } else {
+            $checked = '';
+        } ?>
+        <span class="element-checkbox-container">
+            <input type="checkbox" <?php echo $checked ?>
+            name="<?php echo $this->optionGroup . '[' . $checkName . ']' ?>"
+            id="<?php echo $checkName ?>" />
+            <?php echo $element['label']; ?>
+        </span>
+        <?php endforeach ?>
+
+    </div>
+    <div>
+        <button type="button" class="element-selection-show-button">Select Individual Elements</button>
+    </div>
+</div>
 <?php
     }
 
@@ -181,7 +255,23 @@ class OptionPage
     }
     jQuery(document).ready(fix_elements_numbers);
     jQuery("input[type='number']").change(fix_elements_numbers);
+
+    jQuery(".element-selection-show-button").click(
+        function(event) {
+            let target = jQuery(event.target);
+            let container = target.parent().parent().find(".individual-element-selectors");
+
+            container.toggle(500);
+
+        }
+    );
 </script>
+
+<style>
+    .element-checkbox-container {
+        margin-right: 10px;
+    }
+</style>
 
 <?php
     }
@@ -213,9 +303,21 @@ class OptionPage
 
     public function get_options()
     {
-        return get_option($this->optionGroup);
+        // Do some caching to not ask over and over for the options
+        if (!$this->areOptionsSet) {
+            $this->options = get_option($this->optionGroup);
+        }
+        return $this->options;
     }
 
+    /**
+     * Gets an element under the options array with a given name.
+     * If the element isn't set, returns the default
+     *
+     * @param string $name the array key within the options array
+     * @param mixed $default value to return if the field isn't set
+     * @return void
+     */
     public function get_field(string $name, $default)
     {
         $options = $this->get_options();
