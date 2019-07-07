@@ -109,15 +109,6 @@
             "degree": 18
         },
         {
-            "id": "term_connectome_4",
-            "label": "Atque debitis non consequuntur voluptatem id",
-            "type": "term",
-            "url": "http://armando.local/connectome/category/atque-debitis-non-consequuntur-voluptatem-id/",
-            "excerpt": "Esse doloremque quam ut nihil quis minus voluptate voluptatem soluta",
-            "image": "",
-            "degree": 9
-        },
-        {
             "id": "term_connectome_2",
             "label": "Voluptatem totam alias eum odio qui voluptate",
             "type": "term",
@@ -145,22 +136,13 @@
             "degree": 1
         },
         {
-            "id": "post_connectome_29",
-            "label": "Culpa dignissimos id est ipsa",
+            "id": "post_connectome_26",
+            "label": "Saepe odit ut eos velit praesentium laudantium",
             "type": "post",
-            "url": "http://armando.local/connectome/2019/03/26/culpa-dignissimos-id-est-ipsa/",
-            "excerpt": "Qui quia dignissimos Cum molestias repellat fuga ex eius ea Mollitia reprehenderit reiciendis est. Dolorem maiores nobis. Suscipit molestiae eum qui enim quia expedita. Velit voluptate dolorem nulla. autem aut odio iste voluptate. Cupiditate ipsum nisi aliquid commodi. Ducimus dolor non nihil voluptate aperiam. Odio eos minima doloribus aut necessitatibus Fugiat dolorem totam repellendus ad&hellip;",
+            "url": "http://armando.local/connectome/2019/03/26/saepe-odit-ut-eos-velit-praesentium-laudantium/",
+            "excerpt": "Quis quisquam tenetur sit omnis corporis repellat repudiandae aperiam facilis et odit aut ut cumque provident dolorum explicabo est libero nemo deserunt eaque qui nemo vitae minima soluta voluptas est tempore assumenda tempora repellendus unde et non ut voluptatibus provident.",
             "image": false,
-            "degree": 5
-        },
-        {
-            "id": "post_connectome_21",
-            "label": "Dicta dignissimos velit placeat",
-            "type": "post",
-            "url": "http://armando.local/connectome/2019/03/26/dicta-dignissimos-velit-placeat/",
-            "excerpt": "Ut ut sed rem sunt reiciendis quo id eum ab alias hic id vitae possimus voluptates quibusdam id aut quas fugiat nihil et animi ea sed et earum molestias assumenda quidem doloremque explicabo voluptates nisi soluta repudiandae qui repudiandae voluptates quibusdam odio ut eaque.",
-            "image": false,
-            "degree": 5
+            "degree": 4
         },
         {
             "id": "post_connectome_30",
@@ -169,7 +151,16 @@
             "url": "http://armando.local/connectome/2019/03/26/et-ullam-quo-quisquam-nihil-debitis-dolor/",
             "excerpt": "Repudiandae ad ab ipsa aut minima quia Iure harum Voluptatem sit quos perspiciatis Deleniti vel optio voluptatibus esse. Dolorem asperiores maxime excepturi. Rerum minus omnis quisquam est. Ex delectus qui et recusandae. Aut minima omnis repellat Totam asperiores ut est dolorem aut aut ut Voluptas nulla fugiat quis asperiores quod quaerat",
             "image": false,
-            "degree": 5
+            "degree": 4
+        },
+        {
+            "id": "post_connectome_21",
+            "label": "Dicta dignissimos velit placeat",
+            "type": "post",
+            "url": "http://armando.local/connectome/2019/03/26/dicta-dignissimos-velit-placeat/",
+            "excerpt": "Ut ut sed rem sunt reiciendis quo id eum ab alias hic id vitae possimus voluptates quibusdam id aut quas fugiat nihil et animi ea sed et earum molestias assumenda quidem doloremque explicabo voluptates nisi soluta repudiandae qui repudiandae voluptates quibusdam odio ut eaque.",
+            "image": false,
+            "degree": 4
         },
         {
             "id": "post_connectome_28",
@@ -178,16 +169,16 @@
             "url": "http://armando.local/connectome/2019/03/26/quo-assumenda-vel-reprehenderit-alias/",
             "excerpt": "Ex non perferendis et consequatur id accusamus sint voluptas nisi necessitatibus et id explicabo unde blanditiis eaque at repudiandae vel beatae et qui alias porro ut. Amet cumque doloribus delectus ab veniam aut consequuntur harum officiis perspiciatis corrupti odio quis repellat ab eum dicta fuga possimus eos repudiandae ut ut consequatur dolorem illo quod aliquam&hellip;",
             "image": false,
-            "degree": 5
+            "degree": 4
         },
         {
-            "id": "post_connectome_26",
-            "label": "Saepe odit ut eos velit praesentium laudantium",
+            "id": "post_connectome_29",
+            "label": "Culpa dignissimos id est ipsa",
             "type": "post",
-            "url": "http://armando.local/connectome/2019/03/26/saepe-odit-ut-eos-velit-praesentium-laudantium/",
-            "excerpt": "Quis quisquam tenetur sit omnis corporis repellat repudiandae aperiam facilis et odit aut ut cumque provident dolorum explicabo est libero nemo deserunt eaque qui nemo vitae minima soluta voluptas est tempore assumenda tempora repellendus unde et non ut voluptatibus provident.",
+            "url": "http://armando.local/connectome/2019/03/26/culpa-dignissimos-id-est-ipsa/",
+            "excerpt": "Qui quia dignissimos Cum molestias repellat fuga ex eius ea Mollitia reprehenderit reiciendis est. Dolorem maiores nobis. Suscipit molestiae eum qui enim quia expedita. Velit voluptate dolorem nulla. autem aut odio iste voluptate. Cupiditate ipsum nisi aliquid commodi. Ducimus dolor non nihil voluptate aperiam. Odio eos minima doloribus aut necessitatibus Fugiat dolorem totam repellendus ad&hellip;",
             "image": false,
-            "degree": 5
+            "degree": 4
         },
         {
             "id": "post_connectome_25",
@@ -196,7 +187,7 @@
             "url": "http://armando.local/connectome/2019/03/26/magni-itaque-consectetur-provident-ad/",
             "excerpt": "Animi tempore eum nisi qui odio provident aliquam rerum eos rerum temporibus maxime nisi ea nesciunt est corrupti cumque vel veritatis corporis aut natus dolores vitae neque labore at consequatur voluptates assumenda id laboriosam ut enim occaecati nobis est neque id consectetur.",
             "image": false,
-            "degree": 4
+            "degree": 3
         },
         {
             "id": "post_connectome_27",
@@ -204,15 +195,6 @@
             "type": "post",
             "url": "http://armando.local/connectome/2019/03/26/pariatur-officia-temporibus-tempore-et-dolores-totam/",
             "excerpt": "Libero qui ex facere et sed iusto quidem autem perspiciatis voluptatum blanditiis aperiam consequatur repellat dolorum omnis aut quia officiis iure quia eos tenetur asperiores omnis expedita nam porro ad soluta consectetur rem iste quis est ut necessitatibus officia sint in occaecati eius labore veritatis temporibus est aperiam et sit corrupti quia id.",
-            "image": false,
-            "degree": 4
-        },
-        {
-            "id": "post_connectome_23",
-            "label": "Qui impedit maiores quibusdam quaerat",
-            "type": "post",
-            "url": "http://armando.local/connectome/2019/03/26/qui-impedit-maiores-quibusdam-quaerat/",
-            "excerpt": "Quia maiores odit hic consequatur tempora illum totam molestias dolorem dolor aliquid illum maiores explicabo et et quidem ipsa culpa architecto neque occaecati veniam esse doloremque nam id quia et suscipit corporis laboriosam beatae voluptas expedita dolores qui accusantium dolorem sint eligendi aut dolores aut consequatur aliquam qui dolor qui saepe mollitia perferendis voluptatem enim&hellip;",
             "image": false,
             "degree": 3
         },
@@ -226,65 +208,11 @@
             "degree": 3
         },
         {
-            "id": "post_connectome_24",
-            "label": "Accusamus sit qui aut",
-            "type": "post",
-            "url": "http://armando.local/connectome/2019/03/26/accusamus-sit-qui-aut/",
-            "excerpt": "Itaque at ullam similique Omnis Voluptas sit Suscipit architecto Amet labore nostrum Delectus praesentium fuga et et ratione iste rem Perspiciatis ipsa saepe sit Aut iusto quos et et nisi. Quis voluptas porro asperiores rerum. Temporibus odit in et aut incidunt Deleniti et voluptatem nobis dolore est a. Quia consequatur accusantium maxime. Quia iusto sit&hellip;",
-            "image": false,
-            "degree": 3
-        },
-        {
-            "id": "post_connectome_13",
-            "label": "Mollitia quia et accusamus et cupiditate placeat",
-            "type": "post",
-            "url": "http://armando.local/connectome/2019/03/26/mollitia-quia-et-accusamus-et-cupiditate-placeat/",
-            "excerpt": "Optio eum qui non aspernatur qui Modi temporibus quasi Autem exercitationem consequatur quia explicabo laudantium maxime Molestiae et quam ullam inventore sint dignissimos. atque corporis sit aut numquam unde. dolores vero nesciunt alias deleniti. Dignissimos voluptatum cumque dolorem quo. Ut magnam architecto harum ipsa unde Libero sit et odio quidem voluptatum. nostrum aut consequatur est&hellip;",
-            "image": false,
-            "degree": 2
-        },
-        {
             "id": "post_connectome_17",
             "label": "Ut dolor fuga sint velit est alias",
             "type": "post",
             "url": "http://armando.local/connectome/2019/03/26/ut-dolor-fuga-sint-velit-est-alias/",
             "excerpt": "Odio dolore id dolorem laborum ad asperiores maxime iste",
-            "image": false,
-            "degree": 2
-        },
-        {
-            "id": "post_connectome_14",
-            "label": "Ad corporis velit est",
-            "type": "post",
-            "url": "http://armando.local/connectome/2019/03/26/ad-corporis-velit-est/",
-            "excerpt": "Voluptatem beatae voluptas consequatur accusantium optio Nisi molestias deserunt sint. Non animi deleniti laborum dolores maxime. odit pariatur doloribus delectus aut. Hic non quas beatae ipsam hic perspiciatis. quibusdam aut accusamus et. illo fugiat nemo quis aut omnis exercitationem. Voluptatem qui assumenda temporibus Minima molestiae est qui quia ut maiores et. Consequatur et et nisi.&hellip;",
-            "image": false,
-            "degree": 2
-        },
-        {
-            "id": "post_connectome_15",
-            "label": "Molestias quia eveniet expedita voluptate",
-            "type": "post",
-            "url": "http://armando.local/connectome/2019/03/26/molestias-quia-eveniet-expedita-voluptate/",
-            "excerpt": "In et inventore ab a ut. Placeat nesciunt fugiat omnis numquam Sit rerum facere unde veniam cum. Nulla quaerat labore possimus et. Aut nihil hic corporis sed",
-            "image": false,
-            "degree": 2
-        },
-        {
-            "id": "post_connectome_19",
-            "label": "Ab id est asperiores",
-            "type": "post",
-            "url": "http://armando.local/connectome/2019/03/26/ab-id-est-asperiores/",
-            "excerpt": "Sequi delectus officiis laudantium odio ut doloribus iste facere atque cumque excepturi libero ut explicabo quo et blanditiis harum quas. Et sit dolores enim earum est dolorem sunt praesentium quis alias facilis vel et est qui sit ut nesciunt sapiente commodi non ut est delectus et ab blanditiis dolores magni voluptatem fugit quisquam voluptas rerum&hellip;",
-            "image": false,
-            "degree": 2
-        },
-        {
-            "id": "post_connectome_11",
-            "label": "Impedit omnis enim voluptatum laboriosam",
-            "type": "post",
-            "url": "http://armando.local/connectome/2019/03/26/impedit-omnis-enim-voluptatum-laboriosam/",
-            "excerpt": "Rerum odit molestias ipsam quis facere enim rerum culpa illum ut accusantium consectetur facere deleniti autem unde consequatur veritatis qui sit quasi ut ut eligendi.",
             "image": false,
             "degree": 2
         },
@@ -298,11 +226,29 @@
             "degree": 2
         },
         {
+            "id": "post_connectome_11",
+            "label": "Impedit omnis enim voluptatum laboriosam",
+            "type": "post",
+            "url": "http://armando.local/connectome/2019/03/26/impedit-omnis-enim-voluptatum-laboriosam/",
+            "excerpt": "Rerum odit molestias ipsam quis facere enim rerum culpa illum ut accusantium consectetur facere deleniti autem unde consequatur veritatis qui sit quasi ut ut eligendi.",
+            "image": false,
+            "degree": 2
+        },
+        {
             "id": "post_connectome_12",
             "label": "Quae amet magnam dolores voluptates quia aut velit",
             "type": "post",
             "url": "http://armando.local/connectome/2019/03/26/quae-amet-magnam-dolores-voluptates-quia-aut-velit/",
             "excerpt": "Doloremque ipsum quos omnis fugit at architecto quos sunt modi molestiae nostrum dolorem enim qui magnam mollitia quis veritatis rerum laboriosam ut veniam inventore perferendis ut ut quo reiciendis officiis eum alias in natus distinctio dolores minima nobis at voluptatum voluptates nemo hic nobis sed sequi ut ut voluptas reiciendis veritatis ut sit aspernatur recusandae&hellip;",
+            "image": false,
+            "degree": 2
+        },
+        {
+            "id": "post_connectome_24",
+            "label": "Accusamus sit qui aut",
+            "type": "post",
+            "url": "http://armando.local/connectome/2019/03/26/accusamus-sit-qui-aut/",
+            "excerpt": "Itaque at ullam similique Omnis Voluptas sit Suscipit architecto Amet labore nostrum Delectus praesentium fuga et et ratione iste rem Perspiciatis ipsa saepe sit Aut iusto quos et et nisi. Quis voluptas porro asperiores rerum. Temporibus odit in et aut incidunt Deleniti et voluptatem nobis dolore est a. Quia consequatur accusantium maxime. Quia iusto sit&hellip;",
             "image": false,
             "degree": 2
         },
@@ -316,11 +262,56 @@
             "degree": 2
         },
         {
+            "id": "post_connectome_15",
+            "label": "Molestias quia eveniet expedita voluptate",
+            "type": "post",
+            "url": "http://armando.local/connectome/2019/03/26/molestias-quia-eveniet-expedita-voluptate/",
+            "excerpt": "In et inventore ab a ut. Placeat nesciunt fugiat omnis numquam Sit rerum facere unde veniam cum. Nulla quaerat labore possimus et. Aut nihil hic corporis sed",
+            "image": false,
+            "degree": 2
+        },
+        {
+            "id": "post_connectome_14",
+            "label": "Ad corporis velit est",
+            "type": "post",
+            "url": "http://armando.local/connectome/2019/03/26/ad-corporis-velit-est/",
+            "excerpt": "Voluptatem beatae voluptas consequatur accusantium optio Nisi molestias deserunt sint. Non animi deleniti laborum dolores maxime. odit pariatur doloribus delectus aut. Hic non quas beatae ipsam hic perspiciatis. quibusdam aut accusamus et. illo fugiat nemo quis aut omnis exercitationem. Voluptatem qui assumenda temporibus Minima molestiae est qui quia ut maiores et. Consequatur et et nisi.&hellip;",
+            "image": false,
+            "degree": 2
+        },
+        {
+            "id": "post_connectome_19",
+            "label": "Ab id est asperiores",
+            "type": "post",
+            "url": "http://armando.local/connectome/2019/03/26/ab-id-est-asperiores/",
+            "excerpt": "Sequi delectus officiis laudantium odio ut doloribus iste facere atque cumque excepturi libero ut explicabo quo et blanditiis harum quas. Et sit dolores enim earum est dolorem sunt praesentium quis alias facilis vel et est qui sit ut nesciunt sapiente commodi non ut est delectus et ab blanditiis dolores magni voluptatem fugit quisquam voluptas rerum&hellip;",
+            "image": false,
+            "degree": 2
+        },
+        {
             "id": "post_connectome_16",
             "label": "Assumenda aut enim maxime ipsa",
             "type": "post",
             "url": "http://armando.local/connectome/2019/03/26/assumenda-aut-enim-maxime-ipsa/",
             "excerpt": "Quam dolor non velit vitae labore nobis qui repellat iusto dicta rerum qui dolor hic quibusdam esse.",
+            "image": false,
+            "degree": 2
+        },
+        {
+            "id": "post_connectome_13",
+            "label": "Mollitia quia et accusamus et cupiditate placeat",
+            "type": "post",
+            "url": "http://armando.local/connectome/2019/03/26/mollitia-quia-et-accusamus-et-cupiditate-placeat/",
+            "excerpt": "Optio eum qui non aspernatur qui Modi temporibus quasi Autem exercitationem consequatur quia explicabo laudantium maxime Molestiae et quam ullam inventore sint dignissimos. atque corporis sit aut numquam unde. dolores vero nesciunt alias deleniti. Dignissimos voluptatum cumque dolorem quo. Ut magnam architecto harum ipsa unde Libero sit et odio quidem voluptatum. nostrum aut consequatur est&hellip;",
+            "image": false,
+            "degree": 2
+        },
+        {
+            "id": "post_connectome_23",
+            "label": "Qui impedit maiores quibusdam quaerat",
+            "type": "post",
+            "url": "http://armando.local/connectome/2019/03/26/qui-impedit-maiores-quibusdam-quaerat/",
+            "excerpt": "Quia maiores odit hic consequatur tempora illum totam molestias dolorem dolor aliquid illum maiores explicabo et et quidem ipsa culpa architecto neque occaecati veniam esse doloremque nam id quia et suscipit corporis laboriosam beatae voluptas expedita dolores qui accusantium dolorem sint eligendi aut dolores aut consequatur aliquam qui dolor qui saepe mollitia perferendis voluptatem enim&hellip;",
             "image": false,
             "degree": 2
         },
@@ -345,13 +336,8 @@
     ],
     "links": [
         {
-            "source": "post_connectome_29",
-            "target": "user_connectome_3",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_21",
-            "target": "user_connectome_3",
+            "source": "post_connectome_26",
+            "target": "user_connectome_8",
             "value": 5
         },
         {
@@ -360,13 +346,18 @@
             "value": 5
         },
         {
+            "source": "post_connectome_21",
+            "target": "user_connectome_3",
+            "value": 5
+        },
+        {
             "source": "post_connectome_28",
             "target": "user_connectome_11",
             "value": 5
         },
         {
-            "source": "post_connectome_26",
-            "target": "user_connectome_8",
+            "source": "post_connectome_29",
+            "target": "user_connectome_3",
             "value": 5
         },
         {
@@ -380,22 +371,7 @@
             "value": 5
         },
         {
-            "source": "post_connectome_23",
-            "target": "user_connectome_11",
-            "value": 5
-        },
-        {
             "source": "post_connectome_1",
-            "target": "user_connectome_1",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_24",
-            "target": "user_connectome_3",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_13",
             "target": "user_connectome_1",
             "value": 5
         },
@@ -405,7 +381,27 @@
             "value": 5
         },
         {
-            "source": "post_connectome_14",
+            "source": "post_connectome_22",
+            "target": "user_connectome_8",
+            "value": 5
+        },
+        {
+            "source": "post_connectome_11",
+            "target": "user_connectome_1",
+            "value": 5
+        },
+        {
+            "source": "post_connectome_12",
+            "target": "user_connectome_1",
+            "value": 5
+        },
+        {
+            "source": "post_connectome_24",
+            "target": "user_connectome_3",
+            "value": 5
+        },
+        {
+            "source": "post_connectome_20",
             "target": "user_connectome_1",
             "value": 5
         },
@@ -415,33 +411,28 @@
             "value": 5
         },
         {
+            "source": "post_connectome_14",
+            "target": "user_connectome_1",
+            "value": 5
+        },
+        {
             "source": "post_connectome_19",
-            "target": "user_connectome_1",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_11",
-            "target": "user_connectome_1",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_22",
-            "target": "user_connectome_8",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_12",
-            "target": "user_connectome_1",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_20",
             "target": "user_connectome_1",
             "value": 5
         },
         {
             "source": "post_connectome_16",
             "target": "user_connectome_1",
+            "value": 5
+        },
+        {
+            "source": "post_connectome_13",
+            "target": "user_connectome_1",
+            "value": 5
+        },
+        {
+            "source": "post_connectome_23",
+            "target": "user_connectome_11",
             "value": 5
         },
         {
@@ -455,48 +446,18 @@
             "value": 5
         },
         {
-            "source": "post_connectome_29",
-            "target": "term_connectome_4",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_29",
+            "source": "post_connectome_26",
             "target": "term_connectome_3",
             "value": 5
         },
         {
-            "source": "post_connectome_29",
+            "source": "post_connectome_26",
             "target": "term_connectome_1",
             "value": 5
         },
         {
-            "source": "post_connectome_29",
+            "source": "post_connectome_26",
             "target": "term_connectome_2",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_21",
-            "target": "term_connectome_4",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_21",
-            "target": "term_connectome_3",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_21",
-            "target": "term_connectome_1",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_21",
-            "target": "term_connectome_2",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_30",
-            "target": "term_connectome_4",
             "value": 5
         },
         {
@@ -515,8 +476,18 @@
             "value": 5
         },
         {
-            "source": "post_connectome_28",
-            "target": "term_connectome_4",
+            "source": "post_connectome_21",
+            "target": "term_connectome_3",
+            "value": 5
+        },
+        {
+            "source": "post_connectome_21",
+            "target": "term_connectome_1",
+            "value": 5
+        },
+        {
+            "source": "post_connectome_21",
+            "target": "term_connectome_2",
             "value": 5
         },
         {
@@ -535,28 +506,18 @@
             "value": 5
         },
         {
-            "source": "post_connectome_26",
-            "target": "term_connectome_4",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_26",
+            "source": "post_connectome_29",
             "target": "term_connectome_3",
             "value": 5
         },
         {
-            "source": "post_connectome_26",
+            "source": "post_connectome_29",
             "target": "term_connectome_1",
             "value": 5
         },
         {
-            "source": "post_connectome_26",
+            "source": "post_connectome_29",
             "target": "term_connectome_2",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_25",
-            "target": "term_connectome_4",
             "value": 5
         },
         {
@@ -571,26 +532,11 @@
         },
         {
             "source": "post_connectome_27",
-            "target": "term_connectome_4",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_27",
             "target": "term_connectome_3",
             "value": 5
         },
         {
             "source": "post_connectome_27",
-            "target": "term_connectome_1",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_23",
-            "target": "term_connectome_4",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_23",
             "target": "term_connectome_1",
             "value": 5
         },
@@ -605,42 +551,7 @@
             "value": 5
         },
         {
-            "source": "post_connectome_24",
-            "target": "term_connectome_4",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_24",
-            "target": "term_connectome_2",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_13",
-            "target": "term_connectome_1",
-            "value": 5
-        },
-        {
             "source": "post_connectome_17",
-            "target": "term_connectome_1",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_14",
-            "target": "term_connectome_1",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_15",
-            "target": "term_connectome_1",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_19",
-            "target": "term_connectome_1",
-            "value": 5
-        },
-        {
-            "source": "post_connectome_11",
             "target": "term_connectome_1",
             "value": 5
         },
@@ -650,8 +561,18 @@
             "value": 5
         },
         {
+            "source": "post_connectome_11",
+            "target": "term_connectome_1",
+            "value": 5
+        },
+        {
             "source": "post_connectome_12",
             "target": "term_connectome_1",
+            "value": 5
+        },
+        {
+            "source": "post_connectome_24",
+            "target": "term_connectome_2",
             "value": 5
         },
         {
@@ -660,7 +581,32 @@
             "value": 5
         },
         {
+            "source": "post_connectome_15",
+            "target": "term_connectome_1",
+            "value": 5
+        },
+        {
+            "source": "post_connectome_14",
+            "target": "term_connectome_1",
+            "value": 5
+        },
+        {
+            "source": "post_connectome_19",
+            "target": "term_connectome_1",
+            "value": 5
+        },
+        {
             "source": "post_connectome_16",
+            "target": "term_connectome_1",
+            "value": 5
+        },
+        {
+            "source": "post_connectome_13",
+            "target": "term_connectome_1",
+            "value": 5
+        },
+        {
+            "source": "post_connectome_23",
             "target": "term_connectome_1",
             "value": 5
         }

@@ -103,6 +103,18 @@ class ElementList
         $this->data = array_slice($this->data, 0, $amount);
     }
 
+    /**
+     * Deletes an element from the data
+     *
+     * @param string $id
+     * @return void
+     */
+    public function remove_element_by_id($id)
+    {
+        $key = $this->get_element_key_from_id($id);
+        unset($this->data[$key]);
+    }
+
     // ---- GETTERS ---------------
 
     /**

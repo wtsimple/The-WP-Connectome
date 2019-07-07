@@ -17,6 +17,7 @@
             </div>
             <div v-if="lastClickedNode.excerpt" v-html="lastClickedNode.excerpt"></div>
             <button
+              class="data-viz-button"
               v-if="lastClickedNode.url"
               target="_blank"
               @click.prevent="open_link"
@@ -157,6 +158,11 @@ export default {
   color: rgb(7, 7, 46);
   text-decoration: none;
 }
+
+.node-data h3 a:hover {
+  text-decoration: underline;
+}
+
 .node-data h3 span {
   font-size: 0.8em;
   font-weight: 300;
@@ -181,5 +187,9 @@ export default {
   color: black;
   margin-top: 5px;
   border-radius: 5px;
+  cursor: pointer;
+}
+.node-data-block button:hover {
+  box-shadow: 2px 2px black;
 }
 </style>

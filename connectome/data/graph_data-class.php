@@ -86,6 +86,18 @@ class GraphData
     }
 
     /**
+     * Deletes an element of given type with the ID
+     *
+     * @param string $type type of element to be destroyed
+     * @param string $id id of the element to delete
+     * @return void
+     */
+    public function remove_element_by_id($type = '', $id = '')
+    {
+        $this->execute_by_type($type, 'remove_element_by_id', [$id]);
+    }
+
+    /**
      * Rank all elements of a given type by a field and keep only a given amount
      *
      * @param string $type the type of element to be ranked and pruned
@@ -96,5 +108,47 @@ class GraphData
     public function prune_by_type($type = '', $amount = 0, $field = 'degree')
     {
         $this->execute_by_type($type, 'prune_by_field', [$amount, $field]);
+    }
+
+    /**
+     * Deletes all elements that are disabled in the options
+     * @return void
+     */
+    public function remove_disabled_elements()
+    {
+        // Delete terms
+        $terms = $this->terms->get_objects(true);
+        $this->remove_type_disabled($terms, 'term');
+        // Delete users
+        $users = $this->users->get_objects(true);
+        $this->remove_type_disabled($users, 'user');
+        // Loop through post types
+        $supraPost = OptionStorage::get_option('POST_TYPE_SUPRA');
+        foreach ($this->postTypes as $type => $postObj) {
+            $elements = $postObj->get_objects(true);
+            $this->remove_type_disabled($elements, $type, $supraPost);
+        }
+    }
+
+    /**
+     * Loop through a type of element eliminating the disabled
+     *
+     * @param array $elements list of the elements
+     * @param string $type name of the element type
+     * @param string $supraType supra type like 'postTypes' if exists
+     * @return void
+     */
+    public function remove_type_disabled($elements = [], $type = '', $supraType = '')
+    {
+        $handler = new SettingsOptionHandler();
+        $options = get_option(OptionStorage::get_option('OPTIONS_NAME'));
+        // Loop through elements
+        foreach ($elements as $key => $element) {
+            // check whether the isActive option exists
+            $name = $handler->generate_name(['types', $supraType, $type, 'elements', $element['id'], 'isActive']);
+            if (!isset($options[$name])) {
+                $this->remove_element_by_id($type, $element['id']);
+            }
+        }
     }
 }

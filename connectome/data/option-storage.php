@@ -18,6 +18,7 @@ class OptionStorage
         'OPTIONS_STORAGE_NAME' => 'connectome-options-options-storage',
         'OPTIONS_GRAPH_NAME' => 'connectome-options-graph',
         'ID_DELIMITER' => '_connectome_',
+        'POST_TYPE_SUPRA' => 'postTypes',
         'COLOR_PALETTE' => [
             '#1f77b4',
             '#ff7f0e',

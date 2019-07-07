@@ -8,6 +8,7 @@
     "vue-connectome/yarn-error.log": "explorerExcludedFiles",
     "connectome.zip": "explorerExcludedFiles",
     "index.php": "explorerExcludedFiles",
+    "Actions.txt": "explorerExcludedFiles",
     "*/package-lock.json": "explorerExcludedFiles",
     "*/package.json": "explorerExcludedFiles",
     "*/webpack.config.js": "explorerExcludedFiles",

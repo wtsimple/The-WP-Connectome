@@ -62,7 +62,8 @@ class OptionPage
     public function prepare_elements()
     {
         if (!$this->areElementsPrepared) {
-            $this->siteGraph->prepare_all_elements();
+            $removeDisabled = false;
+            $this->siteGraph->prepare_all_elements($removeDisabled);
             $this->siteGraph->build_graph();
         }
         $this->areElementsPrepared = true;
@@ -152,7 +153,7 @@ class OptionPage
         $colorPalette = OptionStorage::get_option('COLOR_PALETTE');
         $index = $args['index'];
         $type = $args['type'];
-        $supraType = isset($args['post_types']) ? 'postTypes' : '';
+        $supraType = $this->get_supra_type($args);
         $amountField = $this->optionHandler->generate_name(['types', $supraType, $type['name'], 'max']);
         $amount = $this->get_field($amountField, 10);
         $colorField = $this->optionHandler->generate_name(['types', $supraType, $type['name'], 'color']);
@@ -270,6 +271,7 @@ class OptionPage
 <style>
     .element-checkbox-container {
         margin-right: 10px;
+        display: inline-block;
     }
 </style>
 
@@ -345,6 +347,12 @@ class OptionPage
 
     public static function get_color_palette()
     {
+    }
+
+    public function get_supra_type($args)
+    {
+        $postSupra = OptionStorage::get_option('POST_TYPE_SUPRA');
+        return isset($args['post_types']) ? $postSupra : '';
     }
 }
 

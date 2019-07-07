@@ -137,7 +137,7 @@ class SiteGraph
      * Sets users, terms and post types data to do the first graph built
      * @return void
      */
-    public function prepare_all_elements()
+    public function prepare_all_elements($removeDisabled = true)
     {
         $this->graphData->users->build_data_from_objects(get_users());
         $this->graphData->terms->build_data_from_objects($this->get_all_terms());
@@ -150,6 +150,9 @@ class SiteGraph
                     'post_type' => $type,
                 ]
             ));
+        }
+        if ($removeDisabled) {
+            $this->graphData->remove_disabled_elements();
         }
     }
 
