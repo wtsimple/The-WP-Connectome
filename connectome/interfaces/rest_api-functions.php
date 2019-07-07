@@ -4,8 +4,8 @@ namespace Connectome;
 
 function graph_data()
 {
-    $graph = new SiteGraph();
-    $graph->build_pruned_graph();
+    // $graph = new SiteGraph();
+    // $graph->build_pruned_graph();
     return SiteGraph::get_graph();
 }
 

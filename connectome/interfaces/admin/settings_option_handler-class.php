@@ -61,7 +61,10 @@ class SettingsOptionHandler
     {
         $fullOption = get_option($this->optionGroup);
         $regexp = '/' . $this->separator . $name . '/';
-        $keys = ArrayTransform::get_matching_keys($fullOption, $regexp);
+        $keys = [];
+        if (!empty($fullOption) and is_array($fullOption)) {
+            $keys = ArrayTransform::get_matching_keys($fullOption, $regexp);
+        }
         return $keys;
     }
 }

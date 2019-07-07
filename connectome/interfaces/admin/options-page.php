@@ -70,7 +70,7 @@ class OptionPage
     }
 
     /**
-    * Sets the WP hooks for needed to show the settings page
+    * Sets the WP hooks needed to make the settings page work
     *
     * @return void
     */
@@ -78,7 +78,10 @@ class OptionPage
     {
         add_action('admin_menu', [$this, 'register_option_page']);
         add_action('admin_init', [$this, 'register_fields']);
+        add_action('updated_option', [$this, 'update_graph']);
     }
+
+    // ------- METHODS TO HOOK -------------
 
     /**
     * Creates a WP settings page with name and location
@@ -138,6 +141,27 @@ class OptionPage
             );
         }
     }
+
+    /**
+     * This is meant to be run on updated_option hook to update
+     * the graph
+     *
+     * Of course, it only updates the graph if the updated option is
+     * the one used by the settings page
+     * @param string $option name of the option being updated
+     * @param mixed $oldValue value before updating
+     * @param mixed $value new value assigned to the option
+     * @return void
+     */
+    public function update_graph($option)
+    {
+        if ($option === $this->optionGroup) {
+            $graph = new SiteGraph();
+            $graph->build_pruned_graph();
+        }
+    }
+
+    // --------- GENERATORS FOR PARTS OF THE PAGE --------
 
     /**
     * Generates the heading for the first section
@@ -278,6 +302,8 @@ class OptionPage
 <?php
     }
 
+    // ------ GETTERS ------------------
+
     public function get_post_types()
     {
         $types = get_all_post_types();
@@ -356,8 +382,8 @@ class OptionPage
     }
 }
 
-    $optionPage = new OptionPage();
-    $optionPage->set_hooks();
+$optionPage = new OptionPage();
+$optionPage->set_hooks();
 
     // function setting_dropdown_fn()
     // {

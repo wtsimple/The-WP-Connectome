@@ -108,7 +108,11 @@ class ArrayTransform
      */
     public static function get_matching_keys($array, $regexp)
     {
-        $keys = array_keys($array);
-        return preg_grep($regexp, $keys);
+        if (is_array($array) and !empty($array)) {
+            $keys = array_keys($array);
+            return preg_grep($regexp, $keys);
+        } else {
+            return null;
+        }
     }
 }

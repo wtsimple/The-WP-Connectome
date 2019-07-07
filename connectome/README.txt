@@ -70,28 +70,20 @@ the degree centrality. More central nodes are considered more important.
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.0 =
 
-- A change since the previous version.
-- Another change.
+- First version
 
-= 0.5 =
+== Performance ==
 
-- List versions from most recent at top to oldest at bottom.
-
-== Upgrade Notice ==
-
-= 1.0 =
-Upgrade notices describe the reason a user should upgrade. No more than 300 characters.
-
-= 0.5 =
-This version fixes a security related bug. Upgrade immediately.
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation." Arbitrary sections will be shown below the built-in sections outlined above.
+The graph is created by first including all the elements (but those manually disabled)
+and then connecting them to calculate the centrality and evaluate which are the most important.
+Only then the amount of elements are truncated to the numbers given in the options using
+the centrality is the criterion.
+That means a very big site (with many users, posts and terms) will require a lot of resources and time
+to create the graph, even if you set it to have few elements, unless you manually disable all the unwanted
+elements. If you have a very big site you should have a server with ample resources, but if
+you don't, then probably is not a good idea to use The Connectome, at least as it's implemented by now.
 
 == A brief Markdown Example ==
 

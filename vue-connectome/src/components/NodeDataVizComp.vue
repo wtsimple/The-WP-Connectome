@@ -9,10 +9,12 @@
           </h3>
           <div class="node-data-block" :style="{background: color }">
             <div class="node-image-container" v-if="lastClickedNode.image">
-              <img :src="lastClickedNode.image" alt />
+              <a :href="lastClickedNode.url" target="_blank">
+                <img :src="lastClickedNode.image" alt />
+              </a>
             </div>
-            <div>
-              <span>In the site connects with:</span>
+            <div class="connects-with-message">
+              <span>Connects with:</span>
               <strong>{{lastClickedNode.degree}}</strong>
             </div>
             <div v-if="lastClickedNode.excerpt" v-html="lastClickedNode.excerpt"></div>
@@ -179,6 +181,17 @@ export default {
   width: 50%;
   margin-top: 5px;
 }
+.node-data-block .connects-with-message {
+  margin-bottom: 8px;
+}
+.node-data-block .connects-with-message span {
+  font-size: 0.9em;
+  border-bottom: 0.5px solid white;
+}
+.node-data-block .connects-with-message strong {
+  font-size: 1.1em;
+}
+
 .node-data-block button {
   background-color: rgba(11, 108, 117, 0.8);
   margin-bottom: 5px;

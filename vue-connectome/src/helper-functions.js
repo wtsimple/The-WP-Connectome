@@ -1,34 +1,28 @@
 /**
- * (arm) Returns the radius of a node in the simulation
- * @param {object} d
+ * Returns the radius of a node in the simulation
+ * @param {object} d the node data
  */
 export function node_radius(d) {
-	return 10 + d.degree;
+	return 8 + 5 * Math.log(d.degree + 1);
 }
 
 /**
- * (arm) Radius of the collision force of a node
- * @param {object} d
+ * Radius of the collision force of a node
+ * @param {object} d the node data
  */
 export function collide_radius(d) {
 	return node_radius(d) + 1;
 }
 
-export function parse_translate_string(string) {
-	let content = string.match(/translate\((\d+\.\d*,\d+\.\d*)\)/)[1];
+/**
+ * Returns an object with the numeric data of the translation
+ * from a translation string
+ *
+ * @param {string} translation formatted like 'translate(5.33,4.99)'
+ */
+export function parse_translate_string(translation) {
+	let content = translation.match(/translate\((\d+\.\d*,\d+\.\d*)\)/)[1];
 	let x = parseFloat(content.split(",")[0]);
 	let y = parseFloat(content.split(",")[1]);
 	return { x: x, y: y };
 }
-
-// /**
-//  * Sets the width and height of an svg (d3) object
-//  * Returns the resulting transformed object
-//  *
-//  * @param {object} svg
-//  * @param {number} width
-//  * @param {number} height
-//  */
-// export function set_svg_size(svg, width, height) {
-// 	return svg.attr("height", height).attr("width", width);
-// }
