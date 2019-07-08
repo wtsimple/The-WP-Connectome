@@ -8,8 +8,11 @@ vue-connectome/dist/
 vue-connectome/npm-debug.log
 vue-connectome/yarn-error.log
 
+# Pictures
+snapshots
 
 # Other files
 connectome.zip
 index.php
 Actions.txt
+connectome/info-about-readme.txt

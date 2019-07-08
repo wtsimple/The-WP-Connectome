@@ -3,7 +3,7 @@
  * @param {object} d the node data
  */
 export function node_radius(d) {
-	return 8 + 5 * Math.log(d.degree + 1);
+	return 8 + 0.5 * Math.min(d.degree, 20) + 3 * Math.log(d.degree + 1);
 }
 
 /**

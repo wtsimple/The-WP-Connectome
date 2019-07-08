@@ -1,8 +1,8 @@
 === The Connectome ===
-Contributors: (this should be a list of wordpress.org userid's)
-Tags: data visualization, alternative navigation
-Requires at least: 3.0.1
-Tested up to: 5.2
+Contributors: (TO FIX ******\******* THIS SHOULD BE A LIST OF WORDPRESS.ORG USERID'S)
+Tags: data visualization, graphs, alternative navigation
+Requires at least: 4.0.1
+Tested up to: 5.2.2
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -11,32 +11,32 @@ The Connectome shows you all of your site in a single visualization. It allows y
 
 == Description ==
 
-This is the long description. No limit, and you can use Markdown (as well as in the following sections).
+A WP site is made with several elements like posts, users and taxonomy terms.
+The Connectome tries to show all of them and their connections in a single
+interactive visualization. It should provide insight about the structure
+of your site and a different navigation, mostly interesting for the
+site admin or editor but perhaps also good to give your users to play with.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+I think that The Connectome could be of particular use to novice WP
+site creators because at the beginning you'll still be wrapping
+your head around what's WP about. The Connectome will help you
+to learn all the essential elements you have in the site and
+how they connect to each other.
 
-A few notes about the sections above:
+This is the first release of my first plugin so I'm very exited and scared, but also quite
+open to suggestions, requests or criticism. I would be especially happy if more
+experienced developers inspected my code and gave me their opinions.
 
-- "Contributors" is a comma separated list of wp.org/wp-plugins.org usernames
-- "Tags" is a comma separated list of tags that apply to the plugin
-- "Requires at least" is the lowest version that the plugin will work on
-- "Tested up to" is the highest version that you've _successfully used to test the plugin_. Note that it might work on
-  higher versions... this is just the highest one you've verified.
-- Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
-  stable.
+## Road map
 
-      Note that the `readme.txt` of the stable tag is the one that is considered the defining one for the plugin, so
+I have a long list of improvements to include in future releases, among them:
 
-  if the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used
-  for displaying information about the plugin. In this situation, the only thing considered from the trunk `readme.txt`
-  is the stable tag pointer. Thus, if you develop in trunk, you can update the trunk `readme.txt` to reflect changes in
-  your in-development version, without having that information incorrectly disclosed about the current stable version
-  that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
+- Responsiveness and more flexible behavior for the visualization
+- Search functionality to find nodes in the graph
+- Having several graphs with different configurations to show in different parts of your site
+- Tell the admin about problematic nodes like posts without featured image or excerpt text, taxonomy terms without description, etc.
 
-      If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
-
-  you put the stable version, in order to eliminate any doubt.
+If you think one of them is more urgent thant others, you can also tell me.
 
 == Installation ==
 
@@ -48,13 +48,13 @@ A few notes about the sections above:
 
 == Frequently Asked Questions ==
 
-= Can I decide which posts, users or terms to show in the graph? =
+= Can I decide which elements go in the graph? =
 
 Yes, you can decide in the settings page exactly which elements will be included
 in the graph. Next to each type of element there is a button to show a foldable
 panel where you can select each of the elements individually.
 
-= What happens if I want to show certain amount for each type of element? =
+= What if I want to show only certain amount for each type of element? =
 
 You can set a max amount of elements for each type. The first "most important"
 elements will be kept while the others discarded. The metrics by now is
@@ -62,11 +62,10 @@ the degree centrality. More central nodes are considered more important.
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-   the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-   directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-   (or jpg, jpeg, gif).
-2. This is the second screen shot
+1. Unselected graph display
+2. Node selected without data visualization
+3. Node data visualization
+4. Options (the panel to select individual elements is foldable)
 
 == Changelog ==
 
@@ -84,28 +83,3 @@ That means a very big site (with many users, posts and terms) will require a lot
 to create the graph, even if you set it to have few elements, unless you manually disable all the unwanted
 elements. If you have a very big site you should have a server with ample resources, but if
 you don't, then probably is not a good idea to use The Connectome, at least as it's implemented by now.
-
-== A brief Markdown Example ==
-
-Ordered list:
-
-1. Some feature
-1. Another feature
-1. Something else about the plugin
-
-Unordered list:
-
-- something
-- something else
-- third thing
-
-Here's a link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-Titles are optional, naturally.
-
-[markdown syntax]: http://daringfireball.net/projects/markdown/syntax "Markdown is what the parser uses to process much of the readme file"
-
-Markdown uses email style notation for blockquotes and I've been told:
-
-> Asterisks for _emphasis_. Double it up for **strong**.
-
-`<?php code(); // goes in backticks ?>`
