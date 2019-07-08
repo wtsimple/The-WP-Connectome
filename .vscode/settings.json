@@ -7,7 +7,6 @@
     "vue-connectome/npm-debug.log": "explorerExcludedFiles",
     "vue-connectome/yarn-error.log": "explorerExcludedFiles",
     "snapshots": "explorerExcludedFiles",
-    "connectome.zip": "explorerExcludedFiles",
     "index.php": "explorerExcludedFiles",
     "Actions.txt": "explorerExcludedFiles",
     "connectome/info-about-readme.txt": "explorerExcludedFiles",
