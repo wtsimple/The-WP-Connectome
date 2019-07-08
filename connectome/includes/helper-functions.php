@@ -11,7 +11,7 @@ namespace Connectome;
  */
 function arm_dump($name, $var)
 {
-    if (CONNECTOME_DEVELOP) {
+    if (WP_DEBUG) {
         echo '<br>' . $name . ' --- ';
         var_dump($var);
         echo '----- <br>';
@@ -27,7 +27,7 @@ function arm_dump($name, $var)
  */
 function arm_log($filename, $var)
 {
-    if (CONNECTOME_DEVELOP) {
+    if (WP_DEBUG) {
         file_put_contents($filename, var_export($var, true));
     }
 }

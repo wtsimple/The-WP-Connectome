@@ -49,13 +49,13 @@ function register_cpt($name, $plural, $args = [])
 
 //Register all Custom Post Types
 add_action('wp_loaded', function () {
-    if (CONNECTOME_DEVELOP) {
-        $bdts = [
-            'my_cpt',
-        ];
-        foreach ($bdts as $bdt) {
-            register_cpt($bdt, $bdt . 's');
-        }
+    if (defined('CONNECTOME_DEVELOP')) {
+        // $bdts = [
+        //     'my_cpt',
+        // ];
+        // foreach ($bdts as $bdt) {
+        //     register_cpt($bdt, $bdt . 's');
+        // }
     }
     save_post_types();
 }, 100);

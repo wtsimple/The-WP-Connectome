@@ -13,26 +13,21 @@ class VueData
      * vue script handle defined in wp_register_script
      * @var string
      */
-    public $script = 'vue_build';
+    public $script = 'vue_connectome_build';
     /**
      * url where the vue script will be available
      * @var string
      */
     public $url;
-    /**
-     * WP base url to add new posts
-     * @var  string
-     */
-    public $createPostBaseURL;
 
     public function __construct()
     {
-        $this->createPostBaseURL = get_home_url() . '/wp-admin/post-new.php?post_type=';
-        if (defined('CONNECTOME_DEVELOP') and CONNECTOME_DEVELOP) {
-            $this->url = 'http://localhost:8080/dist/build.js';
-        } else {
-            $this->url = plugins_url() . '/connectome/enqueue/js/' . $this->script . '.js';
-        }
+        // if (defined('CONNECTOME_DEVELOP')) {
+        //     $this->url = 'http://localhost:8080/dist/build.js';
+        // } else {
+        //     $this->url = plugins_url() . '/connectome/enqueue/js/' . $this->script . '.js';
+        // }
+        $this->url = plugins_url() . '/connectome/enqueue/js/' . $this->script . '.js';
     }
 
     //This array is intended to be passed to the vue script via wp_localize_script()

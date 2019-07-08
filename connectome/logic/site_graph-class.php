@@ -38,9 +38,11 @@ class SiteGraph
     {
         $optionName = OptionStorage::get_option('OPTIONS_GRAPH_NAME');
         $graphRaw = get_option($optionName, '');
-        $graphData = json_decode($graphRaw);
+        $graphData = json_decode($graphRaw, true);
 
-        if (empty($graphData)) {
+        $opName = OptionStorage::get_option('OPTIONS_NAME');
+        $max = get_options_max($opName);
+        if (!empty($max) and (!isset($graphData['nodes']) or empty($graphData['nodes']))) {
             $graph = new SiteGraph();
             $graph->build_pruned_graph();
             self::get_graph();//Recursive
@@ -197,10 +199,10 @@ class SiteGraph
     private function save_graph()
     {
         // Save on a file for inspection only under development
-        if (CONNECTOME_DEVELOP) {
-            $json = json_encode($this->plainData, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
-            file_put_contents(self::$baseFolder . 'data/graph.json', $json);
-        }
+        // if (defined('CONNECTOME_DEVELOP')) {
+        // $json = json_encode($this->plainData, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+        // file_put_contents(self::$baseFolder . 'data/graph.json', $json);
+        // }
         $optionName = OptionStorage::get_option('OPTIONS_GRAPH_NAME');
         $json = json_encode($this->plainData, JSON_UNESCAPED_SLASHES);
         update_option($optionName, $json);

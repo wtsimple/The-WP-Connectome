@@ -129,7 +129,7 @@ class ElementList
         $elements = array_filter($this->data, function ($datum) use ($id) {
             return $datum['id'] === $id;
         });
-        $firstKey = array_key_first($elements);
+        $firstKey = connectome_array_key_first($elements);
         $element = $elements[$firstKey];
         $key = array_search($element, $this->data);
         return $key;
@@ -191,7 +191,7 @@ class ElementList
         }
 
         if ($single) {
-            $firstKey = array_key_first($selectedObjects);
+            $firstKey = connectome_array_key_first($selectedObjects);
             $object = isset($selectedObjects[$firstKey]) ? $selectedObjects[$firstKey] : null;
             return $object;
         }

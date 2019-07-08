@@ -5,22 +5,17 @@ namespace Connectome;
 /**
  * The connectome bootstrap file
  *
- * This file is read by WordPress to generate the plugin information in the plugin
- * admin area. This file also includes all of the dependencies used by the plugin,
- * registers the activation and deactivation functions, and defines a function
- * that starts the plugin.
- *
  * @link              http://example.com
  * @since             1.0.0
  * @package           Connectome
  *
  * @wordpress-plugin
  * Plugin Name:       The Connectome
- * Plugin URI:        https://bikerentalhavana.com/armando/plugin/connectome
+ * Plugin URI:        https://github.com/ArmandoRiveroPi/The-WP-Connectome
  * Description:       The WP Connectome shows you all of your site in a single visualization. It allows you to see the connections among the elements of your site like users, posts (either regular or custom post types) and taxonomy terms.
  * Version:           1.0.0
  * Author:            Armando Rivero
- * Author URI:        https://bikerentalhavana.com/armando
+ * Author URI:        https://github.com/ArmandoRiveroPi
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       connectome

@@ -36,8 +36,8 @@ function save_post_types()
         $count[$type] = wp_count_posts($type)->publish;
     }
     // Exclude the types set in the OptionStorage to be excluded
-    $types = array_filter($types, function ($type) {
-        $excluded = OptionStorage::get_option('EXCLUDED_TYPES');
+    $excluded = OptionStorage::get_option('EXCLUDED_TYPES');
+    $types = array_filter($types, function ($type) use ($excluded) {
         return !in_array($type, $excluded);
     });
 
@@ -67,4 +67,22 @@ function get_options_max($optionName)
         }
     }
     return $max;
+}
+
+/**
+ * For PHP < 7.3
+ */
+
+function connectome_array_key_first(array $array)
+{
+    if (function_exists('array_key_first')) {
+        return array_key_first($array);
+    }
+    if (empty($array) or !is_array($array)) {
+        return null;
+    }
+    foreach ($array as $key => $unused) {
+        return $key;
+    }
+    return null;
 }
