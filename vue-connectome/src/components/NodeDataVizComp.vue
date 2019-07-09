@@ -33,7 +33,6 @@
 </template>
 
 <script>
-import $ from "jquery";
 import * as arm from "../helper-functions";
 import { mapState, mapGetters } from "vuex";
 
@@ -68,7 +67,8 @@ export default {
   },
 
   mounted() {
-    $(".node-element").on("click", this.node_clicked);
+    // jquery code
+    jQuery(".node-element").on("click", this.node_clicked);
   },
 
   methods: {
@@ -129,7 +129,8 @@ export default {
     },
 
     get_clicked_d3_node(event) {
-      let target = $(event.target);
+      // jquery code
+      let target = jQuery(event.target);
       let d3node = target.closest(".node-element");
       d3node.id = d3node.attr("id");
       return d3node;
