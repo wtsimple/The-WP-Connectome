@@ -34,6 +34,12 @@ This is the first release of my first plugin so I'm very exited and scared, but 
 open to suggestions, requests or criticism. I would be especially happy if more
 experienced developers inspected my code and gave me their opinions.
 
+## Live demo
+
+It's for a small site, but anyways
+
+[WP Connectome Demo](https://dantecubantours.com/graph/)
+
 ## Road map
 
 I have a long list of improvements to include in future releases, among them:

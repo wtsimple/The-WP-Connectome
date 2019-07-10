@@ -9,6 +9,12 @@ and D3JS. VUE handles all the logic of the JS app and D3 only the force-directed
 
 This is the development version, for the ready to use version go to WordPress-url.
 
+## Live demo
+
+It's for a small site, but anyways
+
+[WP Connectome Demo](https://dantecubantours.com/graph/)
+
 ## Installation
 
 To develop on the front end side you need node and npm.
