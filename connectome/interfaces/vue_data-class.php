@@ -22,11 +22,8 @@ class VueData
 
     public function __construct()
     {
-        if (defined('CONNECTOME_DEVELOP')) {
-            $this->url = 'http://localhost:8080/dist/build.js';
-        } else {
-            $this->url = plugins_url('enqueue/js/' . $this->script . '.js', dirname(__FILE__));
-        }
+        // $this->url = 'http://localhost:8080/dist/build.js';
+        $this->url = plugins_url('enqueue/js/' . $this->script . '.js', dirname(__FILE__));
     }
 
     //This array is intended to be passed to the vue script via wp_localize_script()
